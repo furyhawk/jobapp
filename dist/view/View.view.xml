@@ -1,0 +1,218 @@
+<mvc:View controllerName="ZGEATFA001ZGEATFA001.controller.View" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar" height="100%" xmlns:l="sap.ui.layout">
+	<!--<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="false" title="Job Application">-->
+	<!--	<semantic:content>-->
+	<App>
+		<pages>
+			<Page>
+				<customHeader>
+					<Bar>
+						<contentLeft>
+							<Breadcrumbs>
+								<Link press="onPress" text="EXPLORE JOBS"/>
+								<Link press="onPress" text="YOUR APPLICATIONS"/>
+								<!--<Text text="YOUR APPLICATIONS"/>-->
+							</Breadcrumbs>
+						</contentLeft>
+						<!--<contentRight>-->
+						<!--	<Button id="closeButton" text="" icon="sap-icon://af/power-off" class="circleButton blueIcon" press="onClose" enabled="true" visible="true"/>-->
+						<!--</contentRight>-->
+					</Bar>
+				</customHeader>
+				<!--<subHeader>-->
+				<!--	<Bar>-->
+				<!--		<contentMiddle>-->
+				<!--			<Title text="Access Dashboard" level="H1"></Title>-->
+				<!--		</contentMiddle>-->
+				<!--	</Bar>-->
+				<!--</subHeader>-->
+				<!--<HBox>-->
+				<!--	<Link text="EXPLORE JOBS" class="sapUiSmallMargin"></Link>-->
+				<!--	<Text text="YOUR APPLICATIONS" class="sapUiSmallMargin"></Text>-->
+				<!--</HBox>-->
+				<Panel expanded="true" expandable="true" headerText="Job Application" width="auto" class="sapUiResponsiveMargin">
+					<content>
+						<l:VerticalLayout>
+							<HBox>
+								<Label text="I am a " class="sapUiSmallMarginTop sapUiTinyMarginEnd"></Label>
+								<Select forceSelection="false" selectedKey="" change="onLine1" class="sapUiTinyMargin">
+									<items>
+										<core:Item key="1" text="fresh graduate"/>
+										<core:Item key="2" text="veteran"/>
+										<core:Item key="3" text="expert"/>
+									</items>
+								</Select>
+							</HBox>
+							<HBox id="hbL2" visible="false">
+								<Label text="and would like to find " class="sapUiSmallMarginTop sapUiTinyMarginEnd"></Label>
+								<Select forceSelection="false" selectedKey="" change="onLine2" class="sapUiTinyMargin">
+									<items>
+										<core:Item key="1" text="permanent job"/>
+										<core:Item key="2" text="temporary job"/>
+										<core:Item key="3" text="contract job"/>
+									</items>
+								</Select>
+							</HBox>
+							<HBox>
+								<Label text="as " class="sapUiSmallMarginTop sapUiTinyMarginEnd" id="lbL3a" visible="false"></Label>
+								<Select forceSelection="false" selectedKey="" change="onLine3a" class="sapUiTinyMargin" id="slL3a" visible="false">
+									<items>
+										<core:Item key="1" text="accountant"/>
+										<core:Item key="2" text="software engineer"/>
+										<core:Item key="3" text="architect"/>
+									</items>
+								</Select>
+								<Label text="in " class="sapUiSmallMarginTop sapUiTinyMarginEnd" id="lbL3b" visible="false"></Label>
+								<Select forceSelection="false" selectedKey="" change="onLine3b" class="sapUiTinyMargin" id="slL3b" visible="false">
+									<items>
+										<core:Item key="1" text="Ministry of Law"/>
+										<core:Item key="2" text="Ministry of Labour"/>
+										<core:Item key="3" text="Ministry of Education"/>
+									</items>
+								</Select>
+							</HBox>
+						</l:VerticalLayout>
+					</content>
+				</Panel>
+				<!--scope="Action"-->
+				<Panel id="pn2" expanded="false" expandable="true" headerText="Saved jobs (3)" width="auto" class="sapUiResponsiveMargin">
+					<!--	<content>-->
+					<!--tiles="{/TileCollection}"-->
+					<!--<TileContainer id="container" tileDelete="handleTileDelete" visible="false">-->
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<!--<TileContainer id="container" tileDelete="handleTileDelete" visible="true" tiles="{/TileCollection}">-->
+					<!--	<tiles>-->
+					<!--		<StandardTile icon="sap-icon://hint" type="{type}" number="{number}" numberUnit="3 days ago" title="Senior/Principal Procurement Officer"-->
+					<!--			info="Permanent" infoState="{infoState}"/>-->
+					<!--	<StandardTile icon="{icon}" type="{type}" number="{number}" numberUnit="{numberUnit}" title="{title}" info="{info}" infoState="{infoState}"/>-->
+					<!--	</tiles>-->
+					<!--</TileContainer>-->
+					<!--	</content>-->
+				</Panel>
+				<Panel id="pn3" expanded="false" expandable="true" headerText="Jobs for you" width="auto" class="sapUiResponsiveMargin">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="3 days ago" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="3 days ago" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="3 days ago" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="3 days ago" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="3 days ago" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Senior/Principal Procurement Officer" scope="Actions"
+						subheader="Permanent" press="press">
+						<tileContent>
+							<TileContent unit="3 days ago" footer="3 days ago">
+								<ImageContent src="sap-icon://employee" class="tileLayout"/>
+								<!--<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up"/>-->
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</Panel>
+			</Page>
+		</pages>
+	</App>
+	<!--	</semantic:content>-->
+	<!--	<semantic:customFooterContent>-->
+	<!--		<Button text="Submit" press="onGo" type="Emphasized"/>-->
+	<!--	</semantic:customFooterContent>-->
+	<!--</semantic:FullscreenPage>-->
+</mvc:View>

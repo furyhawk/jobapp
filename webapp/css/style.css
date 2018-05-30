@@ -1,0 +1,59 @@
+/* Enter your custom styles here */
+
+.sapMSlt {
+    position: relative;
+    vertical-align: top;
+    outline: none;
+    height: 2.5rem;
+    margin: 0.25rem 0 0.25rem 0;
+    border: none;
+    background: transparent;
+}
+
+.sapMSltHoverable:not(.sapMSltState):not(.sapMSltIconOnly):hover {
+    border-color: transparent;
+    background: transparent;
+}
+
+.sapMSltHoverable:not(.sapMSltPressed):hover > .sapMSltArrow {
+    background: transparent;
+}
+
+.sapMSltPressed > .sapMSltArrow {
+    background: transparent;
+}
+
+.sapMSltPressed > .sapMSltArrow::before {
+    color: #2990f5;
+}
+
+.sapMSlt > .sapMSltLabel {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    text-indent: 0;
+    text-align: start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    line-height: 2.375rem;
+    color: #2990f5;
+    font-style: normal;
+    font-size: 0.875rem;
+}
+
+.sapMSelectListItemBase {
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #2990f5;
+    font-size: 0.875rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
